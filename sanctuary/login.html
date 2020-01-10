@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- / -->
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Sanctuary | Join Sanctuary</title>
+		<!-- CSRF Token -->
+		<meta name="csrf-token" content="52McWwm30Tg0ssVGB5hqe5BSWLE9fPlhZ3vXulO0">
+		<link rel="icon" type="image/png" href="images/Sanctuary.png">
+
+		<!-- Stylesheets
+	============================================= -->
+
+		<link rel="stylesheet" href="saas/core.min.css">
+		<link rel="stylesheet" href="saas/thesaas.min.css">
+		<link rel="stylesheet" href="saas/style.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="customs/customs.css">
+
+	</head>
+
+	<body class="mh-fullscreen bg-img center-vh p-20" style="background-image: url(images/sample-4.jpg);">
+		<div class="card card-shadowed p-50 w-400 mb-0" style="max-width: 100%">
+      <h5 class="text-uppercase text-center">Member Login</h5>
+      <br><br>
+
+      <form method="POST" action="">
+        <input type="hidden" name="_token" value="52McWwm30Tg0ssVGB5hqe5BSWLE9fPlhZ3vXulO0">        <div class="form-group">
+          <input type="email" class="form-control " placeholder="Email or Webmail" name="email" value="" required >
+
+                                        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control  " placeholder="Password" name="password" required autocomplete="current-password">
+
+                                        </div>
+
+        <div class="form-group flexbox py-10">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" checked name="remember" id="remember" >
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Remember me</span>
+          </label>
+                            <a class="text-muted hover-primary fs-13" href="password/reset.html">
+                    Forgot Password?
+                </a>
+                    </div>
+
+        <div class="form-group">
+          <button class="btn btn-bold btn-block btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+      <hr class="w-10">
+        <p class="text-center text-muted fs-13 mt-20">Go Back To Home, <a href="index.html"> Home.</a></p>
+      <p class="text-center text-muted fs-13 mt-20">Don't have an account? <a href="join-sanctuary.html">Sign up</a></p>
+    </div>
+    
+		<script type="text/javascript" src="../unpkg.com/sweetalert2%407.0.6/dist/sweetalert2.all.js"></script>				<!--
+  MAIN CONTENT
+ ============================================= -->
+
+		<script src="js/jquery.js"></script>
+		<script src="saas/core.min.js"></script>
+		<script>
+			$(document).ready(function() {
+					$(document).on('submit', 'form', function() {
+							$('button').attr('disabled', 'disabled');
+					});
+			});
+		</script>
+
+		<!-- Footer Scripts
+	============================================= -->
+		<script src="saas/thesaas.min.js"></script>
+		<script src="saas/script.js"></script>
+	</body>
+</html>
